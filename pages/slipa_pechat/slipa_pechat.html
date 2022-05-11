@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\..\css\style.css">
+
+</head>
+
+   
+<body>
+    <header>
+        <div class="header-body">
+            <div class="logo-container">
+                <h1><a href="../../index.html" class="cl-white">SmartTyper</a></h1>
+            </div>
+            
+                <ul class="nav-menu">
+                    <li class="dropdown-button" >
+                        <a href="#modes" class=" cl-white">Список тестів</a>
+                        <ul class=" cl-white bg-1 dropdown-menu">
+                                <li>
+                                    <a href="../slipa_pechat/slipa_pechat.html">Легкий</a>
+                        
+                                </li>
+                                <li>
+                                    <a href="../slipa_pechat/slipa_pechat.html">Середній</a>
+                                </li>
+                                <li>
+                                    <a href="../slipa_pechat/slipa_pechat.html">Складний</a>
+                                </li>
+                        </ul>
+                       
+                    </li>
+                    <li class="dropdown-button">                
+                        <a href="#footer" class=" cl-white">Наші контакти</a>
+
+                        <ul class=" cl-white bg-1 dropdown-menu">
+                            <li>
+                                <a href="https://www.facebook.com/">Facebook</a>
+                    
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/">Twitter</a>
+                            </li>
+                    </ul>
+                    </li>
+                </ul>
+
+            
+
+        </div>
+    <div class="pre-content-place" style="height: 56px;"></div>
+    </header>
+<main>
+
+
+    <section>
+    
+        <div id="working_area">
+        <div class="working_area_header">
+            <h3 class="size-60">Перепишіть текст</h3>
+            <h3 class="size-40 right-align" id="timer">Час: 00:00:00</h3>
+        </div>
+        <hr style="color: red;">
+        <div id="input_area_container">
+            <div id="text_to_input"><p id="text"></p></div>
+            <textarea id="input_area" style="resize: none;"></textarea>
+        </div>
+    </div>
+
+    </section>
+    <section>
+
+    <div id="help-keyboard" class="size-70 center">
+        <div class="pre-content-animation ">
+            <div class="keyboard center size-90">
+            
+                <div class="line cl-white">
+                    <div class="keyboard-key" style="margin-right: 0.2;">
+                        <p class="key_number">`</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center">
+                        <p class="key_number symbol">1</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">2</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">3</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">4</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">5</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">6</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">7</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">8</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">9</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">0</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">-</p>
+                    </div>
+                    <div class="keyboard-key  keyboard-key-center">
+                        <p class="key_number symbol">+</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center" id="key_Back_Space">
+                        <p>Backspace</p>
+                    </div>
+                </div>
+                <div class="line cl-white">
+                    <div class="keyboard-key keyboard-key-center">
+                        <p>TAB</p>
+                    </div>        
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">Q</p>
+                        <p class="key_rus symbol symbol">Й</p>
+                    </div>        
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">W</p>
+                        <p class="key_rus symbol symbol">Ц</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">E</p>
+                        <p class="key_rus symbol symbol">У</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">R</p>
+                        <p class="key_rus symbol symbol">К</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">T</p>
+                        <p class="key_rus symbol symbol">Е</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">Y</p>
+                        <p class="key_rus symbol symbol">Н</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">U</p>
+                        <p class="key_rus symbol symbol">Г</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">I</p>
+                        <p class="key_rus symbol symbol">Ш</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">O</p>
+                        <p class="key_rus symbol symbol">Щ</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">P</p>
+                        <p class="key_rus symbol symbol">З</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">[</p>
+                        <p class="key_rus symbol symbol">Х</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">]</p>
+                        <p class="key_rus symbol symbol">ї</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_number">
+                        <p>\</p>
+                    </div>
+                </div>
+                <div class="line cl-white">
+                    <div class="keyboard-key " id="key_Caps_Lock">
+                        <p id="register_indicator">Caps Lock</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">A</p>
+                        <p class="key_rus symbol symbol">Ф</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">S</p>
+                        <p class="key_rus symbol symbol">І</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">D</p>
+                        <p class="key_rus symbol symbol">В</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">F</p>
+                        <p class="key_rus symbol symbol">А</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">G</p>
+                        <p class="key_rus symbol symbol">П</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">H</p>
+                        <p class="key_rus symbol symbol">Р</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">J</p>
+                        <p class="key_rus symbol symbol">О</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">K</p>
+                        <p class="key_rus symbol symbol">Л</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">L</p>
+                        <p class="key_rus symbol symbol">Д</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">;</p>
+                        <p class="key_rus symbol symbol">Ж</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">'</p>
+                        <p class="key_rus symbol symbol">Э</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center">
+                        <p>Enter</p>
+                    </div>
+                </div>
+                <div class="line cl-white">
+                    <div class="keyboard-key keyboard-key-center">
+                        <p>Shift</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">Z</p>
+                        <p class="key_rus symbol symbol">Я</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">X</p>
+                        <p class="key_rus symbol symbol">Ч</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">C</p>
+                        <p class="key_rus symbol symbol">С</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol symbol">V</p>
+                        <p class="key_rus symbol symbol">М</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol">B</p>
+                        <p class="key_rus symbol">И</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol">N</p>
+                        <p class="key_rus symbol">Т</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter " >
+                        <p class="key_eng symbol ">M</p>
+                        <p class="key_rus symbol ">Ь</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol">,</p>
+                        <p class="key_rus symbol">Б</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol">.</p>
+                        <p class="key_rus symbol">Ю</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center key_letter">
+                        <p class="key_eng symbol">/</p>
+                        <p class="key_rus symbol">.</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center ">
+                        <p>Shift</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="keyboard-key keyboard-key-center">
+                        <p>Ctrl</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center">
+                        <p>Fn</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center">
+                        <p>Alt</p>
+                    </div>
+                    <div id="key_space" class="keyboard-key keyboard-key-center" style="width: 40%; border-radius: 5%;">
+                        <p></p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center">
+                        <p>Alt</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center">
+                        <p>Ctrl</p>
+                    </div>
+                    <div class="keyboard-key keyboard-key-center " style="height:50%;width:5%;position: relative;margin-top: 2.5%;border-radius: 7.5%;">
+        
+                        <p>&#x2190;</p>
+        
+                    </div>
+                    <div class="keyboard-key keyboard-key-center " style="width:7.2%; padding: 0; border: none;" >
+                            <div class="key_border center-align absolute key_up_or_down" style="top: 0;"><p class="cl-white ">&#x2191;</p></div>
+        
+        
+                            <div class="key_border center-align absolute key_up_or_down" style="bottom: 0;"><p class="cl-white">&#x2193;</p></div>
+        
+                    </div>
+                    <div class="keyboard-key keyboard-key-center " style="height:50%;width:5%;position: relative;margin-top: 2.5%;">
+        
+                        <p>&#x2192;</p>
+        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        </section>
+        </main>
+        <footer id="footer">
+            <div class="text-container">
+            <p class="cl-white margin-top-5">Copyright ©. All Rights Reserved.</p>
+        </div>
+        </footer>
+</body>
+
+<script>
+    let texts=[
+        "Покажчик - змінна, діапазон значень якої складається з адрес осередків пам'яті або спеціального значення - нульової адреси. Останнє використовується для вказівки того, що в даний момент покажчик не посилається на жодну з допустимих осередків.",
+        "Емпатія – усвідомлене співпереживання поточному емоційному стану іншої людини без втрати відчуття походження цього переживання. Відповідно емпат - це людина з розвиненою здатністю до емпатії.",
+        "Когнітивний дисонанс - стан психічного дискомфорту індивіда, викликане зіткненням у його свідомості конфліктуючих уявлень: ідей, вірувань, цінностей чи емоційних реакцій.",
+        "Філармонія - у деяких країнах: музичне суспільство або установа, яка займається організацією концертів, сприянням розвитку та пропагандою музичного мистецтва.",
+        "Сюрреалізм - напрям у літературі та мистецтві ХХ століття, що склалося в 1920-х роках у художній культурі західного авангардизму. Відрізняється використанням алюзій та парадоксальних поєднань форм. Вважається, що сюрреалізм розвивався понад сорок років, до появи нових течій 1960-х років.",
+        "Експресіонізм - течія в європейському мистецтві епохи модернізму, що здобула найбільший розвиток у перші десятиліття 20 століття, переважно в Німеччині та Австрії. Експресіонізм прагне не так відтворення дійсності, як висловлювання емоційного стану автора.",
+        "Романтизм - ідейний та художній напрямок у європейській та американській культурі кінця 18 століття - першої половини 19 століття, характеризується утвердженням самоцінності духовно-творчого життя особистості, зображенням сильних пристрастей та характерів, одухотвореної та лікувальної природи.",
+        "Йотуни, або йотуни в германо-скандинавській міфології, - велетні (турси) сімейства хрімтурсів (інеїстих велетнів), правнуки Іміра. Йотуни жили в Йотунхеймі та Ніфльхеймі, відрізнялися силою та зростанням і були противниками асів та людей. З одного боку, йотуни - це стародавні велетні, перші жителі світу, що за часом передують богам і людям. З іншого - це мешканці холодної кам'янистої країни на північній та східній околицях землі (Йотунхейм, Утгард), представники стихійних демонічних природних сил, вороги асів. Вони будь-що прагнули відібрати в останніх дружин - богинь Фрейю і Ідунн, їх чарівні атрибути - молот Тора, молодільні яблука Ідунн, кільце Драупнір і т. д. Зрештою інеїсті велетні були переможені асами, очолюваними Один.",
+        "Куміхо - істота з корейської міфології, що являє собою жінку або чоловіка-перевертня, здатну перетворюватися на лисицю з дев'ятьма хвостами. Легенди про таку істоту мали поширення у багатьох регіонах Східної Азії.",
+        "Вони - в японській міфології - великі злісні ікласті і рогаті людиноподібні демони з червоною, блакитною або чорною шкірою, що живуть у Дзигоку, японському аналогу пекла. Європейські аналоги вони - чорти та біси. Дуже сильні і важко убиваються, відсічені частини тіла приростають на місце.",
+        "Йормунганд (Йормунганд, «Великанський посох»), також називається Мідгардсорм - морський змій зі скандинавської міфології, третій син Локі і велетні Ангрбоди. Є аналогом грецького Уробороса.",
+        "Імплікувати (мати на увазі певний зв'язок «якщо..., то...» (умовна зв'язка «якщо..., то...», що прямо формулюється або розуміється): Твердження або істина, які випливають з інших тверджень або істин. з найважливіших умінь критичного мислення — це здатність відрізняти те, що фактично (насправді) передбачається висловлюванням чи ситуацією, від цього, що непродумано умозаключається людьми. те, що вони знають У своїх висловлюваннях критичні мислителі намагаються використовувати слова, які означають тільки те, що вони (мислителі) можуть виправдано обґрунтувати, вони визнають, що існують загальноприйняті слововживання, які породжують загальноприйняті імплікації (умовні зв'язки «якщо..., то...») Сказати про якусь дії, що це вбивство, наприклад, означає імплікувати (мати на увазі), що воно явл є навмисним і не має виправдань.",
+        "Неупереджений: Що відноситься до обох або всіх сторін однаково, незалежно від власних почуттів та інтересів; означає лише суворе дотримання стандартів правильності чи законності незалежно від своїх схильностей; неупереджений і неупереджений мають на увазі свободу від упереджень на користь або проти будь-якої сторони; холоднокровний означає відсутність пристрасті чи сильних емоцій, отже, означає спокійне, безкорисливе судження; об'єктивний має на увазі погляд на людей і речі без орієнтації на себе, свої інтереси тощо."
+    ]
+    let currentStatus={
+        symbol_num:0,
+        currentText:texts[Randomize(0,texts.length)],
+        wrong_symbol_color:"#fa1111",
+        right_symol_color:"#4e7934"
+    }
+    let timerStatus={
+        time:0,
+        timer_is_running:false,
+        milisec:0,
+        sec:0,
+        min:0
+    }
+
+    let textarea=document.getElementById("input_area");
+    let text=document.getElementById("text");
+    let symbols=document.getElementsByClassName("symbols")
+    let rightText=""
+    let timer=document.getElementById("timer")
+    let letters=[];
+
+
+    fillTextContainer(text,letters);
+
+
+
+    textarea.onkeyup=function(key){
+        if((key.keyCode>=48 && key.keyCode<=90) || key.keyCode==32 || (key.keyCode>=186 && key.keyCode<=192) || (key.keyCode>=219 && key.keyCode<=222)){
+            checkSymbol(key)
+        }
+    }
+    textarea.onfocus=function(){
+        timerStatus.timer_is_running=true;
+        StartTimer();
+        
+    }
+    textarea.onblur=function(){
+        timerStatus.timer_is_running=false;
+    }
+
+    function fillTextContainer(text,letters){
+
+        EnterText(text,letters)
+    letters=document.getElementsByClassName("letter");
+        
+    }
+
+    function checkSymbol(key){
+        if(currentStatus.currentText[currentStatus.symbol_num]==key.key){
+            document.getElementById('working_area').style.borderColor=currentStatus.right_symol_color;
+            document.getElementsByTagName("hr")[0].style.background=currentStatus.right_symol_color;
+            textarea.style.borderColor=currentStatus.right_symol_color;
+            console.log(letters)
+            rightText+=currentStatus.currentText[currentStatus.symbol_num];
+            currentStatus.symbol_num++;
+            
+        }else{
+            document.getElementById('working_area').style.borderColor=currentStatus.wrong_symbol_color;
+            document.getElementsByTagName("hr")[0].style.background=currentStatus.wrong_symbol_color;
+            textarea.style.borderColor=currentStatus.wrong_symol_color;
+            textarea.value=rightText;
+
+        }
+    }
+
+    function StartTimer(){
+        if(timerStatus.timer_is_running){
+            setTimeout(ReloadTimer,10)
+        }
+    }
+    function ReloadTimer(){
+        timerStatus.time++;
+
+        ChangeTime();
+
+        let milisec=(timerStatus.milisec<10?"0":"")+timerStatus.milisec;
+        let sec=(timerStatus.sec<10?"0":"")+timerStatus.sec;
+        let min=(timerStatus.min<10?"0":"")+timerStatus.min;
+        timer.innerHTML="Час: "+min+":"+sec+":"+milisec;
+
+        StartTimer();
+        
+    }
+    function ChangeTime(){
+        let rest_time=timerStatus.time-timerStatus.time%6000;
+        timerStatus.min=(rest_time)/6000;
+        rest_time=timerStatus.time-timerStatus.min*6000;
+        timerStatus.sec=(rest_time-rest_time%100)/100;
+        rest_time=rest_time-timerStatus.sec*100;
+        timerStatus.milisec=rest_time;
+    }
+    function Randomize(minX,maxX){
+        return Math.floor(Math.random()*(maxX-minX)+minX);
+    }
+
+    function EnterText(text,letters){
+        for(let i=currentStatus.currentText.length-1;i>=0;i--){
+            text.insertAdjacentHTML('afterbegin',"<span class='letter'>"+currentStatus.currentText[i]+"</span>")
+        }
+    }
+
+</script>
+</html>
